@@ -26,4 +26,4 @@ int dimension = 5;
 int[] array = InitArray(dimension);
 Console.WriteLine(string.Join(", ", array ));
 int [] arr = CopyArray(array);
-Console.WriteLine(string.Join(", ", arr ));
+Console.WriteLine("[{0}]", string.Join(", ", arr ));
