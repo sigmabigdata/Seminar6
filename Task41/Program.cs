@@ -14,7 +14,7 @@ int[] InitArray(int dimention)
 
 {
     int[] result = new int[dimention];
-    
+
 
     for (int i = 0; i < dimention; i++)
     {
@@ -36,11 +36,11 @@ void PrintArray(int[] array)
 
 int[] startArray = InitArray(5);
 
-void SplitArray(int [] startArray)
+void SplitArray(int[] startArray)
 {
-int[] arr = startArray; 
-string[] massStr = new string [arr.Length];
-for(int i = 0; i < arr.Length; i++)
+    int[] arr = startArray;
+    string[] massStr = new string[arr.Length];
+    for (int i = 0; i < arr.Length; i++)
     {
         massStr[i] = arr[i].ToString();
     }
@@ -49,15 +49,15 @@ for(int i = 0; i < arr.Length; i++)
 
 void GetMoreZero(int[] arr)
 {
-int count = 0;
- 
- for (int i = 0; i < arr.Length; i++)
-{
-    if (arr[i] > 0)
+    int count = 0;
+
+    for (int i = 0; i < arr.Length; i++)
     {
-        count++;
+        if (arr[i] > 0)
+        {
+            count++;
+        }
     }
-  }
     Console.WriteLine($"Вы ввели {count} чисел больше 0.");
 }
 
